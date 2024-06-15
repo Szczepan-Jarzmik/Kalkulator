@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
-  class Calculator {
+class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println(" Kalkulator podstawowych działań matematycznych - dodawania, odejmowania, mnożenia oraz dzielenia");
-        
+
         System.out.print("Podaj pierwszą liczbę: ");
-        int number1 = scanner.nextInt();
-        
+        double number1 = scanner.nextDouble();
+
         System.out.print("Podaj symbol operacji arytemtycznej: +, -, *, / : ");
         char operation = scanner.next().charAt(0);
-        
-        System.out.print("Podaj drugą liczbę: ");
-        int number2 = scanner.nextInt();
 
-        int result;
+        System.out.print("Podaj drugą liczbę: ");
+        double number2 = scanner.nextDouble();
+
+        double result;
         boolean validOperation = true;
 
         switch (operation) {
@@ -53,10 +53,10 @@ import java.util.Scanner;
         if (scanner.nextLine().isEmpty()) {
             System.exit(0);
         }
-            else {
-                System.out.println("Naciśnij klawisz Enter, aby zakończyć działanie programu.");
-            }
+        else {
+            System.out.println("Naciśnij klawisz Enter, aby zakończyć działanie programu.");
         }
-       
     }
+
+}
 
